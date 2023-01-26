@@ -1,0 +1,37 @@
+1. The Java class called Holiday is started below. An object of class Holiday
+represents aholiday during the year. This class has three instance variables:
+● name, which is a String representing the name of the holiday
+● day, which is an int representing the day of the month of the holiday
+● month, which is a String representing the month the holiday is in
+a) Write a constructor for the class Holiday, which takes a String representing the name, 
+an int representing the day, and a String representing the month as its arguments, and 
+sets the class variables to these values.
+import java.io.*;
+public class Holiday
+{
+String name;
+int day;
+String month;
+public Holiday()
+{
+name="New year";
+day=1;
+month="January";
+}
+public Holiday(String name,int day,String month)
+{
+this.name=name;
+this.day=day;
+this.month=month;
+}
+public void display()
+{
+System.out.println("Name:"+name +"Day:"+day +"Month:"+month);
+}
+public static void main(String args[])
+{
+System.out.println("Holiday java");
+Holiday h=new Holiday("RepublicDay",26,"January");
+h.display();
+}
+}
